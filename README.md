@@ -1,5 +1,9 @@
 # TwitterSentimentAnalysis
 A Twitter Sentiment Analysis is to use Natural Language Processing(NLP) to classify positive, neutral, and negative tweets to use for data analysis, text mining, data visualization. In this project, tweets based on the american election was extracted, and then later on analyzed and used to predict a sentiment score for each tweet.
+```
+TweetInformation.csv - Dataset created, upon streaming tweets into a database
+updated_tweet_info.csv - Cleaned up dataset
+```
 
 # Data Collection
 The data for this project was mainly extracted from tweepy and Textblob. Tweets were streamed and then created into a dataset, which contain columns such as, the text of the tweet, favorite count, retweet count, username, user description, user location, users followed, and the polarity. This data was then converted into a database, and the database was later converted into a csv file to use later on.
