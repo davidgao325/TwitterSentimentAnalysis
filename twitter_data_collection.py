@@ -59,13 +59,13 @@ class StdOutListener(StreamListener):
     
 
 if __name__ == '__main__':
-    # create connection to sqlite database
+    # Create connection to sqlite database
     db = dataset.connect("sqlite:///tweets.db")
     listener = StdOutListener()
     auth = OAuthHandler(twitter_credentials.CONSUMER_KEY, twitter_credentials.CONSUMER_SECRET)
     auth.set_access_token(twitter_credentials.ACCESS_TOKEN, twitter_credentials.ACCESS_TOKEN_SECRET)
     stream = Stream(auth, listener)
 
-    # search twitter for programming languages
+    # Search twitter for programming languages
     stream.filter(track=['trump', 'biden', 'america','american election'])
     
