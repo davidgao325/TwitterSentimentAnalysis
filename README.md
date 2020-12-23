@@ -3,6 +3,7 @@ A Twitter Sentiment Analysis is to use Natural Language Processing(NLP) to class
 ```
 TweetInformation.csv - Dataset created, upon streaming tweets into a database
 updated_tweet_info.csv - Cleaned up dataset
+twitter_eda.csv -Contains data from the analysis
 ```
 
 # Data Collection
