@@ -66,6 +66,6 @@ if __name__ == '__main__':
     auth.set_access_token(twitter_credentials.ACCESS_TOKEN, twitter_credentials.ACCESS_TOKEN_SECRET)
     stream = Stream(auth, listener)
 
-    # Search twitter for programming languages
+    # Search twitter for words related to the American election
     stream.filter(track=['trump', 'biden', 'america','american election'])
     
